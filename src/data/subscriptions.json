@@ -1,0 +1,55 @@
+{
+  "plans": [
+    {
+      "id": "gratuit",
+      "name": "Gratuit",
+      "price": "0 RON",
+      "period": "/ lună",
+      "description": "Pentru meseriașii la început de drum.",
+      "highlighted": false,
+      "features": [
+        "Profil public de bază",
+        "Până la 5 poze în galeria de lucrări",
+        "Până la 3 oferte active / lună",
+        "Vizibilitate în listările din zona ta",
+        "Recenzii de la clienți",
+        "Mesagerie cu clienții"
+      ]
+    },
+    {
+      "id": "profesional",
+      "name": "Profesional",
+      "price": "25 RON",
+      "priceOriginal": "49 RON",
+      "period": "/ lună",
+      "description": "Pentru meseriașii cu experiență.",
+      "highlighted": true,
+      "badge": "Cel mai popular",
+      "features": [
+        "Tot ce include planul Gratuit",
+        "Oferte nelimitate",
+        "Profil evidențiat în căutări",
+        "Profil marcat ca Verificat",
+        "Statistici vizualizări profil",
+        "Suport prioritar prin email"
+      ]
+    },
+    {
+      "id": "firma",
+      "name": "Firmă",
+      "price": "89 RON",
+      "priceOriginal": "129 RON",
+      "period": "/ lună",
+      "description": "Pentru echipe și companii cu proiecte simultane.",
+      "highlighted": false,
+      "features": [
+        "Tot ce include planul Profesional",
+        "Profil de firmă cu echipă",
+        "Până la 10 membri în echipă",
+        "Galerie extinsă de lucrări",
+        "Prioritate în recomandări locale",
+        "Cont de manager dedicat"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+import { ROMANIAN_COUNTIES } from "./romanian-counties";
+
+export const ROMANIAN_LOCALITIES: Record<string, string[]> = {
+  Alba: ["Alba Iulia", "Aiud", "Blaj", "Sebeș", "Cugir", "Ocna Mureș"],
+  Arad: ["Arad", "Ineu", "Lipova", "Pecica", "Sântana", "Nădlac"],
+  Argeș: ["Pitești", "Câmpulung", "Curtea de Argeș", "Mioveni", "Costești"],
+  Bacău: ["Bacău", "Onești", "Moinești", "Comănești", "Buhuși"],
+  Bihor: ["Oradea", "Beiuș", "Salonta", "Marghita", "Aleșd"],
+  "Bistrița-Năsăud": ["Bistrița", "Beclean", "Năsăud", "Sângeorz-Băi"],
+  Botoșani: ["Botoșani", "Dorohoi", "Darabani", "Săveni"],
+  Brăila: ["Brăila", "Ianca", "Însurăței", "Faurei"],
+  Brașov: ["Brașov", "Făgăraș", "Săcele", "Codlea", "Zărnești", "Râșnov"],
+  București: ["București", "Sector 1", "Sector 2", "Sector 3", "Sector 4", "Sector 5", "Sector 6"],
+  Buzău: ["Buzău", "Râmnicu Sărat", "Nehoiu", "Pogoanele"],
+  Călărași: ["Călărași", "Oltenița", "Budești", "Fundulea"],
+  "Caraș-Severin": ["Reșița", "Caransebeș", "Bocșa", "Oravița", "Moldova Nouă"],
+  Cluj: ["Cluj-Napoca", "Turda", "Dej", "Gherla", "Câmpia Turzii", "Huedin"],
+  Constanța: ["Constanța", "Mangalia", "Medgidia", "Năvodari", "Cernavodă", "Eforie"],
+  Covasna: ["Sfântu Gheorghe", "Târgu Secuiesc", "Covasna", "Baraolt"],
+  Dâmbovița: ["Târgoviște", "Moreni", "Pucioasa", "Găești", "Titu"],
+  Dolj: ["Craiova", "Băilești", "Calafat", "Bechet", "Filiași"],
+  Galați: ["Galați", "Tecuci", "Berești"],
+  Giurgiu: ["Giurgiu", "Bolintin-Vale", "Mihăilești"],
+  Gorj: ["Târgu Jiu", "Motru", "Rovinari", "Novaci", "Tismana"],
+  Harghita: ["Miercurea Ciuc", "Odorheiu Secuiesc", "Toplița", "Gheorgheni"],
+  Hunedoara: ["Deva", "Hunedoara", "Petroșani", "Lupeni", "Vulcan", "Orăștie"],
+  Ialomița: ["Slobozia", "Fetești", "Urziceni", "Țăndărei", "Amara"],
+  Iași: ["Iași", "Pașcani", "Hârlău", "Târgu Frumos"],
+  Ilfov: ["Buftea", "Voluntari", "Pantelimon", "Bragadiru", "Chitila", "Măgurele"],
+  Maramureș: ["Baia Mare", "Sighetu Marmației", "Borșa", "Vișeu de Sus"],
+  Mehedinți: ["Drobeta-Turnu Severin", "Orșova", "Strehaia", "Vânju Mare"],
+  Mureș: ["Târgu Mureș", "Reghin", "Sighișoara", "Târnăveni", "Luduș"],
+  Neamț: ["Piatra Neamț", "Roman", "Târgu Neamț", "Bicaz"],
+  Olt: ["Slatina", "Caracal", "Balș", "Corabia", "Drăgănești-Olt"],
+  Prahova: ["Ploiești", "Câmpina", "Băicoi", "Mizil", "Sinaia", "Azuga"],
+  Sălaj: ["Zalău", "Jibou", "Șimleu Silvaniei", "Cehu Silvaniei"],
+  "Satu Mare": ["Satu Mare", "Carei", "Negrești-Oaș", "Tășnad"],
+  Sibiu: ["Sibiu", "Mediaș", "Cisnădie", "Agnita", "Avrig", "Ocna Sibiului"],
+  Suceava: ["Suceava", "Fălticeni", "Rădăuți", "Câmpulung Moldovenesc", "Vatra Dornei"],
+  Teleorman: ["Alexandria", "Roșiorii de Vede", "Turnu Măgurele", "Zimnicea"],
+  Timiș: ["Timișoara", "Lugoj", "Sânnicolau Mare", "Jimbolia", "Deta"],
+  Tulcea: ["Tulcea", "Babadag", "Măcin", "Isaccea", "Sulina"],
+  Vâlcea: ["Râmnicu Vâlcea", "Drăgășani", "Băbeni", "Horezu"],
+  Vaslui: ["Vaslui", "Bârlad", "Huși", "Negrești"],
+  Vrancea: ["Focșani", "Adjud", "Mărășești", "Panciu", "Odobești"],
+};
+
+const COUNTY_SEATS: Record<string, string> = {
+  Alba: "Alba Iulia",
+  Arad: "Arad",
+  Argeș: "Pitești",
+  Bacău: "Bacău",
+  Bihor: "Oradea",
+  "Bistrița-Năsăud": "Bistrița",
+  Botoșani: "Botoșani",
+  Brăila: "Brăila",
+  Brașov: "Brașov",
+  București: "București",
+  Buzău: "Buzău",
+  Călărași: "Călărași",
+  "Caraș-Severin": "Reșița",
+  Cluj: "Cluj-Napoca",
+  Constanța: "Constanța",
+  Covasna: "Sfântu Gheorghe",
+  Dâmbovița: "Târgoviște",
+  Dolj: "Craiova",
+  Galați: "Galați",
+  Giurgiu: "Giurgiu",
+  Gorj: "Târgu Jiu",
+  Harghita: "Miercurea Ciuc",
+  Hunedoara: "Deva",
+  Ialomița: "Slobozia",
+  Iași: "Iași",
+  Ilfov: "Buftea",
+  Maramureș: "Baia Mare",
+  Mehedinți: "Drobeta-Turnu Severin",
+  Mureș: "Târgu Mureș",
+  Neamț: "Piatra Neamț",
+  Olt: "Slatina",
+  Prahova: "Ploiești",
+  Sălaj: "Zalău",
+  "Satu Mare": "Satu Mare",
+  Sibiu: "Sibiu",
+  Suceava: "Suceava",
+  Teleorman: "Alexandria",
+  Timiș: "Timișoara",
+  Tulcea: "Tulcea",
+  Vâlcea: "Râmnicu Vâlcea",
+  Vaslui: "Vaslui",
+  Vrancea: "Focșani",
+};
+
+export function getLocalitiesForCounty(county: string | null | undefined): string[] {
+  if (!county?.trim()) return [];
+  const list = ROMANIAN_LOCALITIES[county];
+  if (list?.length) return list;
+  const seat = COUNTY_SEATS[county];
+  return seat ? [seat] : [];
+}
+
+export function isKnownCounty(county: string): boolean {
+  return (ROMANIAN_COUNTIES as readonly string[]).includes(county);
+}
